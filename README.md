@@ -1,1 +1,1 @@
-# web-mockup
+# Mockup for WHQ
