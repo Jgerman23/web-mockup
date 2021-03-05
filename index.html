@@ -21,82 +21,78 @@
 	<body>
 		<div>
 			<div class="header">
-				<img class="shelby__bg-img" src="/assets/images/header-img.png" alt="">
-					<div class="col-sm-12 col-lg-6">
-						<div class="shelby__signup">
-							<div class="shelby__signup-header">
-								<h1>Shelby Destroyer Blaster</h1>
-								<p>
-									By 
-									<strong>
-										 H.P. Shelby Manufacturing, ltd.
-									</strong>
-								</p>
-							</div>
-							<div class="shelby__signup-form">
-								<p>
-									We’ve made it to the firing range with our
-									new blaster. Sign up to be the first to know
-									when we launch.
-								</p>
-								<form action="#">
-									<input
-										type="text"
-										placeholder="First Name"
+				<img
+					class="shelby__bg-img"
+					src="/assets/images/header-img.png"
+					alt=""
+				/>
+				<div class="shelby__signup">
+					<div class="shelby__signup-header">
+						<h1>Shelby Destroyer Blaster</h1>
+						<p>
+							By
+							<strong> H.P. Shelby Manufacturing, ltd. </strong>
+						</p>
+						<p class="shelby__signup-header-text">
+							We’ve made it to the firing range with our new
+							blaster. Sign up to be the first to know when we
+							launch.
+						</p>
+					</div>
+					<div class="shelby__signup-form">
+						<p class="shelby__signup-form-text">
+							We’ve made it to the firing range with our new
+							blaster. Sign up to be the first to know when we
+							launch.
+						</p>
+						<form id="shelby__form" action="#">
+							<input type="text" placeholder="First Name" />
+							<input type="text" placeholder="Last Name" />
+							<input id="email" type="text" placeholder="Email Address" />
+							<i id="emailCheck" class="fas fa-check-circle"></i>
+						</form>
+						<p id="emailValidation"></p>
+						<div class="shelby__signup-footer">
+							<button id="enlistNow" class="shelby__signup-button" onclick="validate()" type="submit">
+								Enlist Now
+							</button>
+							<div class="shelby__follow-us">
+								<i>
+									<img
+										src="/assets/images/instagram.png"
+										alt=""
 									/>
-									<input
-										type="text"
-										placeholder="Last Name"
-									/>
-									<input
-										type="text"
-										placeholder="Email Address"
-									/>
-								</form>
-								<div class="shelby__signup-footer">
-									<button class="shelby__signup-button">
-										Enlist Now
-									</button>
-									<div class="shelby__follow-us">
-										<i>
-											<img
-												src="/assets/images/instagram.png"
-												alt=""
-											/>
-										</i>
-										<p>Follow Us</p>
-									</div>
-								</div>
+								</i>
+								<p>Follow Us</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-lg-6">
-					</div>
+				</div>
 			</div>
 			<div class="shelby__main-section">
 				<div class="shelby__second-frame">
-					<img src="/assets/images/second-img.png" alt="">
+					<img src="/assets/images/second-img.png" alt="" />
 					<div class="shelby__second-frame-text">
 						<p>Rapid Fires</p>
 						<h1>6 Rounds Per Second</h1>
 					</div>
 				</div>
 				<div class="shelby__third-frame">
-					<img src="/assets/images/third-img.png" alt="">
+					<img src="/assets/images/third-img.png" alt="" />
 					<div class="shelby__third-frame-text">
 						<h1>120 Round</h1>
 						<p>Magazine</p>
 					</div>
 				</div>
 				<div class="shelby__fourth-frame">
-					<img src="/assets/images/fourth-img.png" alt="">
+					<img src="/assets/images/fourth-img.png" alt="" />
 					<div class="shelby__fourth-frame-text">
 						<h1>Rechargeable</h1>
 						<p>Lithium Ion Battery</p>
 					</div>
 				</div>
 				<div class="shelby__fifth-frame">
-					<img src="/assets/images/fifth-img.png" alt="">
+					<img src="/assets/images/fifth-img.png" alt="" />
 					<div class="shelby__fifth-frame-text">
 						<h1>Coming Soon to Indiegogo.</h1>
 					</div>
@@ -104,14 +100,15 @@
 			</div>
 			<footer>
 				<div class="shelby__footer-text">
-					<p>
-						H.P. Shelby Corp
-					</p>
-					<p>
-						&copy;2021 All Rights Reserved
-					</p>
+					<p>H.P. Shelby Corp</p>
+					<p>&copy;2021 All Rights Reserved</p>
 				</div>
 			</footer>
 		</div>
+		<script
+			src="https://kit.fontawesome.com/774bede53d.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/assets/js/index.js"></script>
 	</body>
 </html>

@@ -9,15 +9,10 @@
 		url("../fonts/CentraNo2-Family-Web/CentraNo2-Black.woff") format("woof");
 }
 
-/* @font-face {
-	font-family: "CentraNo2-secondary";
-	src: url("../fonts/CentraNo2-Family-Web/CentraNo2-Bold.woff2") format("woof2"),
-		 url("../fonts/CentraNo2-Family-Web/CentraNo2-Bold.woff") format("woof");
-} */
-
 body {
 	font-family: "IBM Plex Sans", sans-serif;
 	background-color: #3a3a3c;
+	color: #ffffff;
 }
 
 .header {
@@ -30,7 +25,8 @@ body {
 }
 
 .shelby__signup {
-	margin: 85px 0 85px 96px;
+	margin-left: 96px;
+	padding-top: 85px;
 	width: 535px;
 	height: 100%;
 	position: absolute;
@@ -49,16 +45,20 @@ h1 {
 	text-transform: uppercase;
 	font-size: 6rem;
 	letter-spacing: -4px;
+	line-height: 77.76px;
 	margin: 0;
 }
 
 .shelby__signup h1 {
-	line-height: 77.76px;
 	margin-bottom: 1rem;
 }
 
 .shelby__signup p {
-	color: #ffffff;
+	font-size: 20px;
+	color: #c9c9c9;
+}
+
+.shelby__signup span {
 	font-size: 18px;
 }
 
@@ -66,12 +66,14 @@ h1 {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
+	font-size: 18px;
+	color: #ffffff;
 }
 
 .shelby__signup-form p {
 	color: #c9c9c9;
 	margin-bottom: 16px;
-	font-size: 1.2rem;
+	font-size: 18px;
 }
 
 .shelby__signup-form form {
@@ -80,25 +82,42 @@ h1 {
 	border: 1px solid #c9c9c9;
 	border-radius: 8px;
 	margin-bottom: 32px;
+	position: relative;
 }
 
 .shelby__signup-form input {
 	height: 74px;
-	background-color: transparent;
+	background-color: #3a3a3c;
 	border: none;
-	padding: 24px;
+	padding-left: 24px;
+	border-radius: 8px;
 	color: #ffffff;
 }
 
 .shelby__signup-form input:nth-child(2) {
-	height: 74px;
-	background-color: transparent;
 	border-top: 1px solid #c9c9c9;
 	border-bottom: 1px solid #c9c9c9;
+	border-radius: 0;
+}
+
+form i {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+	font-size: 24px;
+	transition: 0.3s ease-in-out;
+}
+
+#emailValidation {
+	color: #de3e3e;
 }
 
 .shelby__signup-form input:focus {
 	outline: none;
+}
+
+.shelby__signup-form-text {
+	display: none;
 }
 
 .shelby__signup-button {
@@ -171,10 +190,6 @@ h1 {
 	margin: 0 0 204px 86px;
 }
 
-.shelby__third-frame-text h1 {
-	line-height: 77.76px;
-}
-
 .shelby__third-frame-text p {
 	font-size: 22px;
 	margin: 0;
@@ -187,7 +202,7 @@ h1 {
 }
 
 .shelby__fourth-frame img {
-	width: 912px;
+	width: 63.35%;
 	height: auto;
 }
 
@@ -198,10 +213,6 @@ h1 {
 	right: 0;
 	width: 718px;
 	margin: 0 96px 90px 0;
-}
-
-.shelby__fourth-frame-text h1 {
-	line-height: 77.76px;
 }
 
 .shelby__fourth-frame-text p {
@@ -216,7 +227,7 @@ h1 {
 
 .shelby__fifth-frame img {
 	position: absolute;
-	width: 912px;
+	width: 63.35%;
 	height: auto;
 	right: 0;
 }
@@ -227,11 +238,7 @@ h1 {
 	bottom: 0;
 	left: 0;
 	width: 655px;
-	margin: 0 0 52px 90px;
-}
-
-.shelby__fifth-frame-text h1 {
-	line-height: 77.76px;
+	margin: 0 0 52px 96px;
 }
 
 footer {
@@ -245,7 +252,405 @@ footer {
 	justify-content: space-between;
 }
 
+@media (max-width: 1680px) {
+	.shelby__fourth-frame, .shelby__fifth-frame {
+		height: 768px;
+	}
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+	.shelby__fourth-frame, .shelby__fifth-frame {
+		height: 672px;
+	}
+}
+
+@media (max-width: 1399px) {
+	.shelby__signup {
+		margin-left: 45px;
+		padding-top: 30px;
+		width: 400px;
+	}
+
+	.shelby__signup-header {
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-size: 5rem;
+		line-height: 67.76px;
+	}
+
+	.shelby__signup h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	.shelby__signup p {
+		font-size: 1rem;
+	}
+
+	.shelby__signup-form form {
+		margin-bottom: 16px;
+	}
+
+	form i {
+		bottom: 15px;
+	}
+
+	.shelby__signup-form input {
+		height: 52px;
+		border: none;
+		color: #ffffff;
+	}
+
+	.shelby__signup-button {
+		height: 52px;
+		margin-bottom: 16px;
+	}
+
+	.shelby__second-frame-text {
+		margin: 0 0 33px 35px;
+		padding-bottom: 0;
+		width: 480px;
+	}
+
+	.shelby__second-frame-text h1 {
+		line-height: 71px;
+	}
+
+	.shelby__third-frame-text {
+		margin: 0 0 154px 35px;
+	}
+
+	.shelby__fourth-frame {
+		height: 477px;
+	}
+
+	.shelby__fourth-frame-text {
+		width: 564px;
+		margin: 0 45px 40px 0;
+	}
+
+	.shelby__fifth-frame {
+		height: 477px;
+	}
+
+	.shelby__fifth-frame-text {
+		width: 550px;
+		margin: 0 0 0 45px;
+	}
+
+	footer {
+		height: 120px;
+		padding: 32px 45px 83px;
+	}
+}
+
+@media (max-width: 1023px) {
+	h1 {
+		font-size: 3.5rem;
+		line-height: 45.76px;
+	}
+
+	.shelby__signup {
+		width: 360px;
+		margin: 0 0 0 24px;
+		padding-top: 16px;
+	}
+
+	.shelby__signup-header {
+		margin-bottom: 8px;
+	}
+
+	.shelby__signup h1 {
+		line-height: 45.76px;
+		margin-bottom: 4px;
+	}
+
+	.shelby__signup p {
+		font-size: 0.9rem;
+		margin-bottom: 8px;
+	}
+
+	.shelby__signup strong {
+		font-size: 14.4px;
+	}
+
+	.shelby__signup-form form {
+		width: 300px;
+	}
+
+	form i {
+		bottom: 12px;
+	}
+
+	.shelby__signup-form input {
+		height: 48px;
+	}
+
+	.shelby__signup-button {
+		width: 300px;
+	}
+
+	.shelby__signup-button {
+		height: 48px;
+		margin-bottom: 8px;
+	}
+
+	.shelby__follow-us {
+		height: 16px;
+	}
+
+	.shelby__follow-us img {
+		height: 16px;
+		width: 16px;
+	}
+
+	.shelby__follow-us p {
+		padding: 8px 0 0 8px;
+	}
+
+	.shelby__second-frame-text {
+		margin: 0 0 16px 14px;
+		width: 360px;
+	}
+
+	.shelby__second-frame-text h1 {
+		line-height: 49px;
+	}
+
+	.shelby__third-frame-text {
+		margin: 0 0 104px 14px;
+		width: 280px;
+	}
+
+	.shelby__fourth-frame {
+		height: 358px;
+	}
+
+	.shelby__fourth-frame-text {
+		width: 380px;
+		margin: 0 24px 16px 0;
+	}
+
+	.shelby__fifth-frame {
+		height: 358px;
+	}
+
+	.shelby__fifth-frame-text {
+		width: 365px;
+		margin: 0 0 0 24px;
+	}
+
+	.shelby__fourth-frame img,
+	.shelby__fifth-frame img {
+		width: 65.35%;
+	}
+
+	footer {
+		height: 100px;
+		padding: 16px 24px 62px;
+	}
+}
+
+@media (max-width: 767px) {
+	.shelby__signup {
+		width: 300px;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.shelby__signup h1 {
+		line-height: 37.76px;
+	}
+
+	.shelby__signup strong {
+		font-size: 12px;
+	}
+
+	.shelby__signup p {
+		font-size: 0.74rem;
+	}
+
+	.shelby__signup-form input {
+		height: 38px;
+		font-size: 12px;
+	}
+
+	.shelby__signup-button {
+		height: 38px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 474px) {
+	.shelby__second-frame-text p, .shelby__third-frame-text p, .shelby__fourth-frame-text p, .shelby__fifth-frame-text p {
+		font-size: 14px;
+	}
+	.header {
+		height: 550px;
+	}
+
+	.shelby__bg-img {
+		position: relative;
+		right: 0px;
+	}
+
+	.shelby__signup {
+		width: 100%;
+		position: relative;
+		top: -276px;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 2.2rem;
+		line-height: 30.76px;
+		letter-spacing: -2px;
+	}
+
+	.shelby__signup-header {
+		width: 210px;
+		padding: 16px;
+		margin: 0;
+	}
+
+	.shelby__signup h1 {
+		line-height: 30.76px;
+		margin-bottom: 4px;
+	}
+
+	.shelby__signup p {
+		font-size: 0.75rem;
+		margin-bottom: 8px;
+	}
+
+	.shelby__follow-us p {
+		padding: 8px 0 0 8px;
+		height: 22px;
+	}
+
+	.shelby__signup strong {
+		font-size: 12px;
+	}
+
+	.shelby__signup-form {
+		position: relative;
+		bottom: -26px;
+		padding: 0 16px;
+	}
+
+	.shelby__signup-form form {
+		width: 100%;
+	}
+
+	form i {
+		bottom: 14px;
+		font-size: 20px;
+	}
+
+	.shelby__signup-button {
+		width: 100%;
+		margin-bottom: 16px;
+		font-size: 1rem;
+	}
+
+	.shelby__signup-form input {
+		height: 50px;
+		font-size: 12px;
+	}
+
+	.shelby__second-frame-text {
+		margin: 0 0 16px 6px;
+		width: 240px;
+	}
+
+	.shelby__second-frame-text h1 {
+		line-height: 33.74px;
+	}
+
+	.shelby__third-frame-text {
+		margin: 0px 0 35px 6px;
+		width: 150px;
+	}
+
+	.shelby__fourth-frame {
+		height: 215px;
+	}
+
+	.shelby__fourth-frame-text {
+		width: 248px;
+		margin: 0 16px 16px 0;
+	}
+
+	.shelby__fifth-frame {
+		height: 215px;
+	}
+
+	.shelby__fifth-frame-text {
+		width: 215px;
+		margin: 0 0 0 16px;
+	}
+
+	footer {
+		padding: 16px 16px 24px;
+		height: 80px;
+	}
+
+	.shelby__footer-text p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 424px) {
+	.shelby__signup {
+		top: -266px;
+	}
+	.shelby__signup-form {
+		bottom: -16px;
+	}
+}
+
+@media (max-width: 376px) {
+	.header {
+		height: 500px;
+	}
+
+	.shelby__signup-header {
+		width: 190px;
+	}
+
+	.shelby__signup {
+		top: -242px;
+	}
+
+	.shelby__signup-form {
+		bottom: 8px;
+	}
+}
+
+@media (max-width: 374px) {
+	.header {
+		height: 536px;
+	}
 	
+	.shelby__signup-header-text {
+		display: none;
+	}
+
+	.shelby__signup-form-text {
+		border-top: 1px solid #c9c9c9;
+		display: block;
+		padding-top: 10px;
+	}
+
+	.shelby__signup {
+		top: -207px;
+	}
+
+	.shelby__signup-form {
+		bottom: -36px;
+	}
 }
