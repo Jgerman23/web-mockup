@@ -562,6 +562,10 @@ footer {
 		font-size: 12px;
 	}
 
+	.shelby__signup-button {
+		height: 50px;
+	}
+
 	.shelby__second-frame-text {
 		margin: 0 0 16px 6px;
 		width: 240px;
