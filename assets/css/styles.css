@@ -252,19 +252,19 @@ footer {
 	justify-content: space-between;
 }
 
-@media (max-width: 1680px) {
+@media only screen and (max-width: 1680px) {
 	.shelby__fourth-frame, .shelby__fifth-frame {
 		height: 768px;
 	}
 }
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 	.shelby__fourth-frame, .shelby__fifth-frame {
 		height: 672px;
 	}
 }
 
-@media (max-width: 1399px) {
+@media only screen and (max-width: 1399px) {
 	.shelby__signup {
 		margin-left: 45px;
 		padding-top: 30px;
@@ -345,7 +345,7 @@ footer {
 	}
 }
 
-@media (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
 	h1 {
 		font-size: 3.5rem;
 		line-height: 45.76px;
@@ -452,7 +452,7 @@ footer {
 	}
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	.shelby__signup {
 		width: 300px;
 	}
@@ -484,7 +484,7 @@ footer {
 	}
 }
 
-@media (max-width: 474px) {
+@media only screen and (max-width: 474px) {
 	.shelby__second-frame-text p, .shelby__third-frame-text p, .shelby__fourth-frame-text p, .shelby__fifth-frame-text p {
 		font-size: 14px;
 	}
@@ -608,7 +608,7 @@ footer {
 	}
 }
 
-@media (max-width: 424px) {
+@media only screen and (max-width: 424px) {
 	.shelby__signup {
 		top: -266px;
 	}
@@ -617,9 +617,9 @@ footer {
 	}
 }
 
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
 	.header {
-		height: 500px;
+		height: 520px;
 	}
 
 	.shelby__signup-header {
@@ -635,7 +635,7 @@ footer {
 	}
 }
 
-@media (max-width: 374px) {
+@media only screen and (max-width: 374px) {
 	.header {
 		height: 536px;
 	}
