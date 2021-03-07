@@ -617,7 +617,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375px) {
 	.header {
 		height: 520px;
 	}
@@ -635,7 +635,7 @@ footer {
 	}
 
 	.shelby__fourth-frame-text {
-		width: 248px;
+		width: auto;
 		margin: 0 16px 16px 0;
 	}
 }
