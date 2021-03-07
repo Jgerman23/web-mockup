@@ -633,6 +633,11 @@ footer {
 	.shelby__signup-form {
 		bottom: 8px;
 	}
+
+	.shelby__fourth-frame-text {
+		width: 248px;
+		margin: 0 16px 16px 0;
+	}
 }
 
 @media only screen and (max-width: 374px) {
