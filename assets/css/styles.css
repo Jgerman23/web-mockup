@@ -88,6 +88,7 @@ h1 {
 .shelby__signup-form input {
 	height: 74px;
 	background-color: #3a3a3c;
+	background: #3a3a3c;
 	border: none;
 	padding-left: 24px;
 	border-radius: 8px;
@@ -114,6 +115,13 @@ form i {
 
 .shelby__signup-form input:focus {
 	outline: none;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: #3a3a3c !important;
+    background-image: none !important;
+    color: -internal-light-dark(black, white) !important;
 }
 
 .shelby__signup-form-text {
@@ -642,7 +650,7 @@ footer {
 
 @media only screen and (max-width: 374px) {
 	.header {
-		height: 536px;
+		height: 546px;
 	}
 	
 	.shelby__signup-header-text {
